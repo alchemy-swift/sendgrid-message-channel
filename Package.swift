@@ -2,19 +2,19 @@
 import PackageDescription
 
 let package = Package(
-    name: "sendgrid-notification-channel",
+    name: "sendgrid-message-channel",
     platforms: [
         .macOS(.v12)
     ],
     products: [
-        .library(name: "sendgrid-notification-channel", targets: ["sendgrid-notification-channel"]),
+        .library(name: "SendGridMessageChannel", targets: ["SendGridMessageChannel"]),
     ],
     dependencies: [
         .package(url: "https://github.com/alchemy-swift/alchemy", branch: "main"),
     ],
     targets: [
         .target(
-            name: "sendgrid-notification-channel",
+            name: "SendGridMessageChannel",
             dependencies: [
                 .product(name: "Alchemy", package: "alchemy"),
             ]),
